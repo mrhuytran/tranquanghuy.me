@@ -1,0 +1,16 @@
+.bio-outer-div{
+    width: 697px;
+    height: 400px;
+}
+
+.bio-inner-padding-div{
+    width: 150px;
+    height: 100%;
+    float: left;
+}
+
+.bio-inner-div{
+    width: 547px;
+    height: 100%;
+    float: right;
+}

@@ -6,6 +6,7 @@
 	<title>
 		Andrew Tran
 	</title>
+	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	</link>
@@ -22,126 +23,115 @@
 </head>
 
 <body class="index">
-	<table class="title">
-		<tbody>
-			<tr>
-				<td>
-				</td>
-				<td valign="top" style="text-align: right; white-space: nowrap; width: 0px">
-					<h1 class="display-4">Andrew Tran</h1>
-					<p class="lead">Teaching Assistant</p>
-					<br>
-					<p class="lead">
-						Combined Computer Science and Statistics<br>
-						University of British Columiba<br>
-						Vancouver, Canada<br>
-					</p>
-					<br>
-					<a class="btn btn-outline-primary" href="https://www.linkedin.com/in/huyquangtran/"
-						role="button">LinkedIn</a><br>
-					<br>
-					<a class="btn btn-outline-secondary" href="https://github.com/mrhuytran"
-						role="button">GitHub</a><br>
-					<br>
-					<a class="btn btn-outline-info" href="https://devpost.com/mrhuytran?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-						role="button">Devpost</a><br>
-				</td>
-				<td valign="middle" style="text-align: right; width: 255px">
-					<img src="./huytran.jpg" alt="" height="437" width="333"> <br>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	<br>
-	<p>
-	</p>
-	<table cellpadding="0" cellspacing="0" style="text-align: left; width: 890px">
-		<tbody>
-			<tr>
-				<td style="width: 150px;">
-				</td>
-				<td>
-					<p class="mb-0">
-						I am an Undergraduate Teaching Assistant in Computer Science at UBC.
-					</p>
-					<ul></ul>
-					<p class="mb-0">
-						My focus is data-driven programming, software development, and operating systems. I am
-						interested in a wide variety of topics in these areas.
-					</p>
-					<ul></ul>
-					<p class="mb-0">
-						My main interests currently include:
-					</p>
-					<ul>
-						<li class="mb-0">machine learning and AI</li>
-						<li class="mb-0">heterogeneous computing (related projects are currently on hiatus because GPU
-							is dead after I got water on my laptop)</li>
-						<li class="mb-0">cloud computing</li>
-						<li class="mb-0">software engineering</li>
-					</ul>
-					<p class="mb-0">Active projects are in the areas of finance automation, machine learning, and API
-						development. Other recent projects include: EasyEats, Binance API Client, etc.</p>
-				</td>
-				<td style="width: 150px;">
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	<br>
-	<p>
-	</p>
-	<table class="navlinks">
-		<tbody>
-			<tr>
-				<td>
-					<a class="btn btn-dark btn-small" href="./cv.pdf" role="button">cv</a>
-				</td>
-				<td>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-light btn-small" data-toggle="modal"
-						data-target="#modalContactForm">contact</button>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<div>
+		<table class="title">
+			<tbody>
+				<tr>
+					<td>
+					</td>
+					<td valign="top" style="text-align: right; white-space: nowrap; width: 0px">
+						<h1 class="display-4">Andrew Tran</h1>
+						<p class="lead">Teaching Assistant</p>
+						<br>
+						<p class="lead">
+							Combined Computer Science and Statistics<br>
+							University of British Columiba<br>
+							Vancouver, Canada<br>
+						</p>
+						<br>
+						<a class="btn btn-outline-primary" href="https://www.linkedin.com/in/huyquangtran/"
+							role="button">LinkedIn</a><br>
+						<br>
+						<a class="btn btn-outline-secondary" href="https://github.com/mrhuytran"
+							role="button">GitHub</a><br>
+						<br>
+						<a class="btn btn-outline-info"
+							href="https://devpost.com/mrhuytran?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+							role="button">Devpost</a><br>
+					</td>
+					<td valign="middle" style="text-align: right; width: 255px">
+						<img src="./huytran.jpg" alt="" height="437" width="333"> <br>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<p>
+		</p>
+		<div class="bio-outer-div">
+			<div class="bio-inner-padding-div">
+			</div>
+			<div class="bio-inner-div">
+				<p class="mb-0">
+					I am an Undergraduate Teaching Assistant in Computer Science at UBC.
+				</p>
+				<ul></ul>
+				<p class="mb-0">
+					My focus is data-driven programming, software development, and operating systems. I am
+					interested in a wide variety of topics in these areas.
+				</p>
+				<ul></ul>
+				<p class="mb-0">
+					My main interests currently include:
+				</p>
+				<ul>
+					<li class="mb-0">machine learning and AI</li>
+					<li class="mb-0">heterogeneous computing (related projects are currently on hiatus because GPU
+						is dead after I got water on my laptop)</li>
+					<li class="mb-0">cloud computing</li>
+					<li class="mb-0">software engineering</li>
+				</ul>
+				<p class="mb-0">Active projects are in the areas of finance automation, machine learning, and API
+					development. Other recent projects include: EasyEats, Binance API Client, etc.</p>
+			</div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modalContactFormTitle"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="modalContactFormTitle">Email me</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+			<div style="width: 697px;">
+				<span></span>
+				<div style="float: left;">
+					<a class="btn btn-dark btn-small" href="./cv.pdf" role="button">cv</a>
 				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="modalContactForm">Email address</label>
-							<input type="email" class="form-control" id="modalContactFormSender"
-								placeholder="name@example.com">
-						</div>
-						<div class="form-group">
-							<label for="modalContactForm">Message</label>
-							<input class="form-control" id="modalContactFormMessage" rows="3"
-								placeholder="Say hi..."></input>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" onclick="lol()">Send</button>
-					<script>
-						function lol() {
-							alert("Unfortunately, this is harder than I expected :(")
-						}
-					</script>
+				<div style="float: left;">
+					<button type="button" class="btn btn-light btn-small">project</button>
 				</div>
 			</div>
 		</div>
-	</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog"
+			aria-labelledby="modalContactFormTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalContactFormTitle">Email me</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="modalContactForm">Email address</label>
+								<input type="email" class="form-control" id="modalContactFormSender"
+									placeholder="name@example.com">
+							</div>
+							<div class="form-group">
+								<label for="modalContactForm">Message</label>
+								<input class="form-control" id="modalContactFormMessage" rows="3"
+									placeholder="Say hi..."></input>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" onclick="lol()">Send</button>
+						<script>
+							function lol() {
+								alert("Unfortunately, this is harder than I expected :(")
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
 
 </body>
 
