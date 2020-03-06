@@ -24,40 +24,40 @@
 
 <body class="index">
 	<div class="infoPanel" style="float: left;">
-		<table class="title">
-			<tbody>
-				<tr>
-					<td>
-					</td>
-					<td valign="top" style="text-align: right; white-space: nowrap; width: 0px">
-						<h1 class="display-4">Andrew Tran</h1>
-						<p class="lead">Teaching Assistant</p>
-						<br>
-						<p class="lead">
-							Combined Computer Science and Statistics<br>
-							University of British Columiba<br>
-							Vancouver, Canada<br>
-						</p>
-						<br>
-						<a class="btn btn-outline-primary" href="https://www.linkedin.com/in/huyquangtran/"
-							role="button">LinkedIn</a><br>
-						<br>
-						<a class="btn btn-outline-secondary" href="https://github.com/mrhuytran"
-							role="button">GitHub</a><br>
-						<br>
-						<a class="btn btn-outline-info"
-							href="https://devpost.com/mrhuytran?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-							role="button">Devpost</a><br>
-					</td>
-					<td valign="middle" style="text-align: right; width: 255px">
-						<img src="./huytran.jpg" alt="" height="437" width="333"> <br>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<div>
+			<table class="title">
+				<tbody>
+					<tr>
+						<td>
+						</td>
+						<td valign="top" style="text-align: right; white-space: nowrap; width: 0px">
+							<h1 class="display-4">Andrew Tran</h1>
+							<p class="lead">Teaching Assistant</p>
+							<br>
+							<p class="lead">
+								Combined Computer Science and Statistics<br>
+								University of British Columiba<br>
+								Vancouver, Canada<br>
+							</p>
+							<br>
+							<a class="btn btn-outline-primary" href="https://www.linkedin.com/in/huyquangtran/"
+								role="button">LinkedIn</a><br>
+							<br>
+							<a class="btn btn-outline-secondary" href="https://github.com/mrhuytran"
+								role="button">GitHub</a><br>
+							<br>
+							<a class="btn btn-outline-info"
+								href="https://devpost.com/mrhuytran?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+								role="button">Devpost</a><br>
+						</td>
+						<td valign="middle" style="text-align: right; width: 255px">
+							<img src="./huytran.jpg" alt="" height="437" width="333"> <br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<br>
-		<p>
-		</p>
 		<div class="bio-outer-div">
 			<div class="bio-inner-padding-div">
 			</div>
@@ -82,55 +82,55 @@
 					<li class="mb-0">software engineering</li>
 				</ul>
 			</div>
-
-			<div class="footer-nav-bar">
-				<div style="float: left;">
-					<a class="btn btn-dark btn-small" href="./cv.pdf" role="button">cv</a>
-				</div>
-				<div style="float: left;">
-					<button type="button" class="btn btn-light btn-small" onclick="showDiv('projectPanel')">project</button>
-				</div>
-				<div style="float: left;">
-					<button type="button" class="btn btn-info" data-toggle="modal"
-						data-target="#modalContactForm">contact</button>
-					<!-- Modal -->
-					<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog"
-						aria-labelledby="modalContactFormTitle" aria-hidden="true">
-						<div class="modal-dialog modal-dialog-centered" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="modalContactFormTitle">Email me</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<form>
-										<div class="form-group">
-											<label for="modalContactForm">Email address</label>
-											<input type="email" class="form-control" id="modalContactFormSender"
-												placeholder="name@example.com">
-										</div>
-										<div class="form-group">
-											<label for="modalContactForm">Message</label>
-											<input class="form-control" id="modalContactFormMessage" rows="3"
-												placeholder="Say hi..."></input>
-										</div>
-									</form>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary" onclick="lol()">Send</button>
-									<script>
-										function lol() {
-											alert("Unfortunately, this is harder than I expected :(")
-										}
-									</script>
-								</div>
+		</div>
+		<div class="footer-nav-bar">
+			<div style="width: 5px; height: 5px; float: left;"></div>
+			<div style="float: left;">
+				<a class="btn btn-dark btn-small" href="./cv.pdf" role="button">cv</a>
+			</div>
+			<div style="float: left;">
+				<button type="button" class="btn btn-light btn-small" onclick="showDiv('projectPanel')">project</button>
+			</div>
+			<div style="float: left;">
+				<button type="button" class="btn btn-info" data-toggle="modal"
+					data-target="#modalContactForm">contact</button>
+				<!-- Modal -->
+				<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog"
+					aria-labelledby="modalContactFormTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modalContactFormTitle">Email me</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label for="modalContactForm">Email address</label>
+										<input type="email" class="form-control" id="modalContactFormSender"
+											placeholder="name@example.com">
+									</div>
+									<div class="form-group">
+										<label for="modalContactForm">Message</label>
+										<input class="form-control" id="modalContactFormMessage" rows="3"
+											placeholder="Say hi..."></input>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" onclick="lol()">Send</button>
+								<script>
+									function lol() {
+										alert("Unfortunately, this is harder than I expected :(")
+									}
+								</script>
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -141,27 +141,24 @@
 			<div class="card" style="width: 18rem; float: left;">
 				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
+					<h5 class="card-title">EatVenture</h5>
+					<p class="card-text">Find out what is good wherever you are.</p>
 				</div>
 			</div>
 			<div class="project-panel-vpadding-div"></div>
 			<div class="card" style="width: 18rem; float: left;">
 				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
+					<h5 class="card-title">Binance API Client</h5>
+					<p class="card-text">A simple API wrapper for Binance Cryptocurrency trading.</p>
 				</div>
 			</div>
 			<div class="project-panel-vpadding-div"></div>
 			<div class="card" style="width: 18rem; float: left;">
 				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
+					<h5 class="card-title">SuperWarm</h5>
+					<p class="card-text">UBC Local Hack Day - Build Day Runner-up</p>
 				</div>
 			</div>
 			<div class="project-panel-vpadding-div"></div>
@@ -172,27 +169,24 @@
 			<div class="card" style="width: 18rem; float: left;">
 				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
+					<h5 class="card-title">Linkr</h5>
+					<p class="card-text">nwHacks2020. A social media platform.</p>
 				</div>
 			</div>
 			<div class="project-panel-vpadding-div"></div>
 			<div class="card" style="width: 18rem; float: left;">
 				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
+					<h5 class="card-title">The Catalyst Conference 2018</h5>
+					<p class="card-text">https://goaconference.org/</p>
 				</div>
 			</div>
 			<div class="project-panel-vpadding-div"></div>
 			<div class="card" style="width: 18rem; float: left;">
 				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
 				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
+					<h5 class="card-title">tranquanghuy.me</h5>
+					<p class="card-text">Personal website. First website project.</p>
 				</div>
 			</div>
 			<div class="project-panel-vpadding-div"></div>
@@ -200,4 +194,5 @@
 	</div>
 
 </body>
+
 </html>
