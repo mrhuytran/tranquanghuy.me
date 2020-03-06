@@ -19,11 +19,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="./script.js"></script>
 </head>
 
 <body class="index">
-	<div>
+	<div class="infoPanel" style="float: left;">
 		<table class="title">
 			<tbody>
 				<tr>
@@ -81,20 +81,17 @@
 					<li class="mb-0">cloud computing</li>
 					<li class="mb-0">software engineering</li>
 				</ul>
-				<p class="mb-0">Active projects are in the areas of finance automation, machine learning, and API
-					development. Other recent projects include: EasyEats, Binance API Client, etc.</p>
 			</div>
 
-			<div style="width: 697px;">
-				<span></span>
+			<div class="footer-nav-bar">
 				<div style="float: left;">
 					<a class="btn btn-dark btn-small" href="./cv.pdf" role="button">cv</a>
 				</div>
 				<div style="float: left;">
-					<button type="button" class="btn btn-light btn-small">project</button>
+					<button type="button" class="btn btn-light btn-small" onclick="showDiv('projectPanel')">project</button>
 				</div>
 				<div style="float: left;">
-					<button type="button" class="btn btn-outline-info" data-toggle="modal"
+					<button type="button" class="btn btn-info" data-toggle="modal"
 						data-target="#modalContactForm">contact</button>
 					<!-- Modal -->
 					<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog"
@@ -138,6 +135,69 @@
 		</div>
 	</div>
 
-</body>
+	<div class="project-panel-div" id="projectPanel" style="visibility: hidden; height: 0px;">
+		<div>
+			<div class="project-panel-vpadding-div"></div>
+			<div class="card" style="width: 18rem; float: left;">
+				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+			<div class="project-panel-vpadding-div"></div>
+			<div class="card" style="width: 18rem; float: left;">
+				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+			<div class="project-panel-vpadding-div"></div>
+			<div class="card" style="width: 18rem; float: left;">
+				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+			<div class="project-panel-vpadding-div"></div>
+		</div>
+		<div class="project-panel-hpadding-div"></div>
+		<div>
+			<div class="project-panel-vpadding-div"></div>
+			<div class="card" style="width: 18rem; float: left;">
+				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+			<div class="project-panel-vpadding-div"></div>
+			<div class="card" style="width: 18rem; float: left;">
+				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+			<div class="project-panel-vpadding-div"></div>
+			<div class="card" style="width: 18rem; float: left;">
+				<img class="card-img-top" src="./stockimg.jpeg" width="286" height="180" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+			<div class="project-panel-vpadding-div"></div>
+		</div>
+	</div>
 
+</body>
 </html>
