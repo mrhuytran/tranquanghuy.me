@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Based on Strata theme by HTML5 UP
 -->
 <html>
 
@@ -12,7 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <!--
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	-->
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
@@ -21,6 +21,52 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function getOffsetTop(el) {
+            var elem = document.getElementById(el);
+            return elem.offsetTop;
+        }
+
+        function getOffsetBottom(el) {
+            var elem = document.getElementById(el);
+            return elem.offsetTop + elem.offsetHeight;
+        }
+
+        $(function() {
+            var headernava = $("#header nav a");
+            var nav_about = document.getElementById("nav_about");
+            var nav_work = document.getElementById("nav_work");
+            var nav_contact = document.getElementById("nav_contact");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll <= (getOffsetBottom("one") * (2 / 3))) {
+                    //headernava.removeClass('active').addClass("inactive");
+                    nav_about.classList.remove("inactive");
+                    nav_about.classList.add("active");
+                    nav_work.classList.remove("active");
+                    nav_work.classList.add("inactive");
+                    nav_contact.classList.remove("active");
+                    nav_contact.classList.add("inactive");
+                } else if (scroll > (getOffsetBottom("one") * (2 / 3)) && scroll <= (getOffsetBottom("two") * (5 / 6))) {
+                    //headernava.removeClass("inactive").addClass('active');
+                    nav_about.classList.remove("active");
+                    nav_about.classList.add("inactive");
+                    nav_work.classList.remove("inactive");
+                    nav_work.classList.add("active");
+                    nav_contact.classList.remove("active");
+                    nav_contact.classList.add("inactive");
+                } else {
+                    nav_about.classList.remove("active");
+                    nav_about.classList.add("inactive");
+                    nav_work.classList.remove("active");
+                    nav_work.classList.add("inactive");
+                    nav_contact.classList.remove("inactive");
+                    nav_contact.classList.add("active");
+                }
+            });
+        });
+    </script>
 </head>
 
 <body class="is-preload">
@@ -37,9 +83,9 @@
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="#one" class="inactive">About</a></li>
-                <li><a href="#two" class="inactive">Work</a></li>
-                <li><a href="#three" class="inactive">Contact</a></li>
+                <li><a href="#one" class="active" id="nav_about">About</a></li>
+                <li><a href="#two" class="inactive" id="nav_work">Work</a></li>
+                <li><a href="#three" class="inactive" id="nav_contact">Contact</a></li>
             </ul>
         </nav>
         <footer id="footer">
@@ -92,32 +138,32 @@
                 <h2>Recent Work</h2>
                 <div class="row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="" class="image fit thumb"><img src="images/thumbs/eatventure.gif" alt="" /></a>
+                        <a href="https://github.com/mrhuytran" class="image fit thumb"><img src="images/thumbs/eatventure.gif" alt="" /></a>
                         <h3>EatVenture</h3>
                         <p>Find out what is good wherever you are.</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="" class="image fit thumb"><img src="images/thumbs/binance.jpg" alt="" /></a>
+                        <a href="https://github.com/mrhuytran/bnb-api-wrapper" class="image fit thumb"><img src="images/thumbs/binance.jpg" alt="" /></a>
                         <h3>Binance API Client</h3>
                         <p>A simple API wrapper for Binance Cryptocurrency trading.</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="" class="image fit thumb"><img src="images/thumbs/linkr.jpg" alt="" /></a>
+                        <a href="https://devpost.com/software/linkr" class="image fit thumb"><img src="images/thumbs/linkr.jpg" alt="" /></a>
                         <h3>Linkr</h3>
                         <p>nwHacks2020. A social media platform.</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="" class="image fit thumb"><img src="images/thumbs/superwarm.gif" alt="" /></a>
+                        <a href="https://devpost.com/software/super-warm" class="image fit thumb"><img src="images/thumbs/superwarm.gif" alt="" /></a>
                         <h3>SuperWarm</h3>
                         <p>UBC Local Hack Day - Build Day Runner-up</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="" class="image fit thumb"><img src="images/thumbs/tranquanghuy.me.gif" alt="" /></a>
+                        <a href="https://github.com/mrhuytran/tranquanghuy.me" class="image fit thumb"><img src="images/thumbs/tranquanghuy.me.gif" alt="" /></a>
                         <h3>tranquanghuy.me</h3>
                         <p>Personal website. First web project.</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="" class="image fit thumb"><img src="images/thumbs/goa.jpg" alt="" /></a>
+                        <a href="https://github.com/mrhuytran/GOAproject" class="image fit thumb"><img src="images/thumbs/goa.jpg" alt="" /></a>
                         <h3>The Catalyst Conference 2018</h3>
                         <p>Wrote an analytical paper on factors that determine that World Happiness Ranking.Published with readership of 2000.</p>
                     </article>
